@@ -13,8 +13,8 @@ df['broj_nocenja'] = a
 df['ukupno_placeno'] = df['broj_nocenja'] * df['cijena_nocenja']
 #print(a)
 #print(df.head())
-f = open("data_u_txt.txt","w+")
-f.write(df.head().to_string())
-f.close()
+#f = open("data_u_txt.txt","w+")
+#f.write(df.head().to_string())
+#f.close()
 #df.to_parquet('obradjeni_pod/obrajdeno.parquet')
-df.to_csv('obradjeni_pod/obradjeno_csv.csv')
+#df.to_csv('obradjeni_pod/obradjeno_csv.csv')
