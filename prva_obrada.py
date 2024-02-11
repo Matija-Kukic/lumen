@@ -11,6 +11,7 @@ for i in range(len(a)):
         a[i] = 1
 df['broj_nocenja'] = a
 df['ukupno_placeno'] = df['broj_nocenja'] * df['cijena_nocenja']
+print (Test1)
 #print(a)
 #print(df.head())
 #f = open("data_u_txt.txt","w+")
