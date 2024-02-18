@@ -5,5 +5,5 @@ a = list(df["ukupno_placeno"])
 b = list(df["broj_nocenja"])
 c = float(0)
 for i in range(len(a)):
-    c+= a[i] * b[i]
+    c += a[i] * b[i]
 print(c) 
