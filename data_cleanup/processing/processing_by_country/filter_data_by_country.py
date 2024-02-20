@@ -11,7 +11,7 @@ file+="/cleaned_data.csv"
 
 df = pd.read_csv(file)
 #print(df.info()) uspjesno procitan pdf file 
-
+#print(df["zemlja_gosta"][0])
 drzave = set(df["zemlja_gosta"]) 
 #print(drzave) skup svih drzava gostiju
 #file2 = str(curr)
