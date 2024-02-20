@@ -6,7 +6,7 @@ path = curr.parent.parent
 #print(path) put do ociscenih podataka
 
 file = str(path)
-file+="/cleaned_data.csv"
+file +="/cleaned_data.csv"
 #print(file) napravljen string pomocu kojeg cemo otvoriti cleaned_data.csv
 
 df = pd.read_csv(file)
