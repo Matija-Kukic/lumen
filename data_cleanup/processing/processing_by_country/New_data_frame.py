@@ -74,3 +74,4 @@ for z in a:
     #    print(dani)
     new_df = new_df._append(pd.Series(dani,index=new_df.columns),ignore_index=True)
 print(new_df.info())
+new_df.to_csv("country_data/no_of_reservations_per_country_hotel0.csv")
