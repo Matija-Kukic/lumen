@@ -1,3 +1,4 @@
 env
 .DS_Store
 .lsp_symlink
+.ipynb_checkpoints
