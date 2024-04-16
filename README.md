@@ -22,6 +22,12 @@ The goal is to provide accurate occupancy forecasts that can assist hotel manage
 - numpy
 - statsmodels
 - scikit-learn
+- scipy
+- matplotlib
+- seaborn
+- pmdarima
+- tensorflow
+- prophet
 
 ## Installation
 1. Clone the repository: git clone https://github.com/your_username/hotel-occupancy-prediction.git
