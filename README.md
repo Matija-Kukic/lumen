@@ -64,7 +64,7 @@ For any questions or inquiries about this project, please contact the contributo
 ## Contributors
 Kukić Matija Luka -- matija-luka.kukic@fer.hr;
 Baričević Dora -- dora.baricevic@fer.hr;
-Vidović Valentina -- ;
-Džanija Ivan -- ivan.dzanija@fer.hr
+Vidović Valentina -- valvido.math@pmf.hr;
+Džanija Ivan -- ivan.dzanija@fer.hr;
 
 
