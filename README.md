@@ -8,10 +8,11 @@ The goal is to provide accurate occupancy forecasts that can assist hotel manage
 - [Overview](#overview)
 - [Dependencies](#dependencies)
 - [Installation](#installation)
-- [Usage](#usage)
 - [Data](#data)
+- [Usage](#usage)
 - [Models](#models)
 - [Results](#results)
+- [Example](#example)
 - [Contributing](#contributing)
 - [License](#license)
 - [Contact](#contact)
@@ -34,17 +35,16 @@ The goal is to provide accurate occupancy forecasts that can assist hotel manage
 1. Clone the repository: git clone https://github.com/your_username/hotel-occupancy-prediction.git
 2. Install the required dependencies: pip install -r requirements.txt
 
+## Data
+The data set used in this project should contain historical hotel occupancy data. Ensure that the data includes relevant features and that the features are correctly named.
 
 ## Usage
 To use the hotel occupancy prediction model:
-1. Prepare your dataset containing historical hotel occupancy data.
+1. Prepare your data set containing historical hotel occupancy data by renaming the columns as expected(check [Example](#example)).
 2. Run the ARIMA model with conformal predictions:
 
 3. Analyze the results.
 4. Adjust parameters and re-run the model if not satisfied.
-
-## Data
-The dataset used in this project should contain historical hotel occupancy data. Ensure that the data includes relevant features and that the features are correctly named.
 
 ## Models
 This project utilizes the following models:
@@ -53,6 +53,11 @@ This project utilizes the following models:
 
 ## Results
 The results of the occupancy predictions will include point forecasts as well as prediction intervals, providing insights into the expected occupancy levels along with measures of uncertainty. 
+
+## Example
+Here's the expected column :
+
+![Expected column names](docs/imgs/column_names.png)
 
 ## Contributing
 Contributions to this project are welcome! If you have suggestions for improvements or would like to report issues, please submit a pull request or open an issue on GitHub.
