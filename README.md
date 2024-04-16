@@ -40,7 +40,8 @@ To use the hotel occupancy prediction model:
 1. Prepare your dataset containing historical hotel occupancy data.
 2. Run the ARIMA model with conformal predictions:
 
-3. Analyze the results and adjust parameters as needed.
+3. Analyze the results.
+4. Adjust parameters and re-run the model if not satisfied.
 
 ## Data
 The dataset used in this project should contain historical hotel occupancy data. Ensure that the data includes relevant features and that the features are correctly named.
