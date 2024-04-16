@@ -40,7 +40,7 @@ The data set used in this project should contain historical hotel occupancy data
 
 ## Usage
 To use the hotel occupancy prediction model:
-1. Prepare your data set containing historical hotel occupancy data by renaming the columns as expected (check [Example](#example)).
+1. Prepare your data set containing historical hotel occupancy data by renaming the features as expected (check [Example](#example)).
 2. Run the ARIMA model with conformal predictions:
 
 3. Analyze the results.
@@ -55,9 +55,9 @@ This project utilizes the following models:
 The results of the occupancy predictions will include point forecasts as well as prediction intervals, providing insights into the expected occupancy levels along with measures of uncertainty. 
 
 ## Example
-First the columns of the data set need to be named as following:
+First the features of the data set need to be named as following:
 
-![Expected column names](docs/imgs/column_names.png)
+![Expected features names](docs/imgs/column_names.png)
 
 ## Contributing
 Contributions to this project are welcome! If you have suggestions for improvements or would like to report issues, please submit a pull request or open an issue on GitHub.
