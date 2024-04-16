@@ -18,10 +18,17 @@ The goal is to provide accurate occupancy forecasts that can assist hotel manage
 
 ## Dependencies
 - Python 3.x
+- JupyterLab
 - pandas
 - numpy
 - statsmodels
 - scikit-learn
+- scipy
+- matplotlib
+- seaborn
+- pmdarima
+- tensorflow
+- prophet
 
 ## Installation
 1. Clone the repository: git clone https://github.com/your_username/hotel-occupancy-prediction.git
@@ -33,7 +40,8 @@ To use the hotel occupancy prediction model:
 1. Prepare your dataset containing historical hotel occupancy data.
 2. Run the ARIMA model with conformal predictions:
 
-3. Analyze the results and adjust parameters as needed.
+3. Analyze the results.
+4. Adjust parameters and re-run the model if not satisfied.
 
 ## Data
 The dataset used in this project should contain historical hotel occupancy data. Ensure that the data includes relevant features and that the features are correctly named.
@@ -50,7 +58,7 @@ The results of the occupancy predictions will include point forecasts as well as
 Contributions to this project are welcome! If you have suggestions for improvements or would like to report issues, please submit a pull request or open an issue on GitHub.
 
 ## License
-This project is licensed under the [MIT License](LICENSE).
+This project is licensed under the [GPL-3.0 License](LICENSE).
 
 ## Contact
 For any questions or inquiries about this project, please contact the contributors.
@@ -58,7 +66,7 @@ For any questions or inquiries about this project, please contact the contributo
 ## Contributors
 Kukić Matija Luka -- matija-luka.kukic@fer.hr;
 Baričević Dora -- dora.baricevic@fer.hr;
-Vidović Valentina -- ;
-Džanija Ivan -- ivan.dzanija@fer.hr
+Vidović Valentina -- valvido.math@pmf.hr;
+Džanija Ivan -- ivan.dzanija@fer.hr;
 
 
