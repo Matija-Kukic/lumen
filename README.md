@@ -40,7 +40,7 @@ The data set used in this project should contain historical hotel occupancy data
 
 ## Usage
 To use the hotel occupancy prediction model:
-1. Prepare your data set containing historical hotel occupancy data by renaming the columns as expected(check [Example](#example)).
+1. Prepare your data set containing historical hotel occupancy data by renaming the columns as expected (check [Example](#example)).
 2. Run the ARIMA model with conformal predictions:
 
 3. Analyze the results.
