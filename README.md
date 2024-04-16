@@ -56,9 +56,9 @@ This project is licensed under the [MIT License](LICENSE).
 For any questions or inquiries about this project, please contact the contributors.
 
 ## Contributors
-Kukić Matija Luka, matija-luka.kukic@fer.hr
-Baričević Dora, dora.baricevic@fer.hr
-Vidović Valentina, 
-Džanija Ivan, ivan.dzanija@fer.hr
+Kukić Matija Luka -- matija-luka.kukic@fer.hr;
+Baričević Dora -- dora.baricevic@fer.hr;
+Vidović Valentina -- ;
+Džanija Ivan -- ivan.dzanija@fer.hr
 
 
