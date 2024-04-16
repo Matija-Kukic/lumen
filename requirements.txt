@@ -1,4 +1,5 @@
 pandas
+jupyter
 numpy
 statsmodels
 scikit-learn
