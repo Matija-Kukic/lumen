@@ -36,7 +36,7 @@ To use the hotel occupancy prediction model:
 3. Analyze the results and adjust parameters as needed.
 
 ## Data
-The dataset used in this project should contain historical hotel occupancy data. Ensure that the data includes relevant features such as date/time, occupancy rates, and any other factors that may influence occupancy.
+The dataset used in this project should contain historical hotel occupancy data. Ensure that the data includes relevant features and that the features are correctly named.
 
 ## Models
 This project utilizes the following models:
@@ -45,7 +45,6 @@ This project utilizes the following models:
 
 ## Results
 The results of the occupancy predictions will include point forecasts as well as prediction intervals, providing insights into the expected occupancy levels along with measures of uncertainty. 
-Evaluate the performance of the model using appropriate metrics and visualize the results to communicate findings effectively.
 
 ## Contributing
 Contributions to this project are welcome! If you have suggestions for improvements or would like to report issues, please submit a pull request or open an issue on GitHub.
