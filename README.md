@@ -18,6 +18,7 @@ The goal is to provide accurate occupancy forecasts that can assist hotel manage
 
 ## Dependencies
 - Python 3.x
+- JupyterLab
 - pandas
 - numpy
 - statsmodels
@@ -56,7 +57,7 @@ The results of the occupancy predictions will include point forecasts as well as
 Contributions to this project are welcome! If you have suggestions for improvements or would like to report issues, please submit a pull request or open an issue on GitHub.
 
 ## License
-This project is licensed under the [MIT License](LICENSE).
+This project is licensed under the [GPL-3.0 License](LICENSE).
 
 ## Contact
 For any questions or inquiries about this project, please contact the contributors.
