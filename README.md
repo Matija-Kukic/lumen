@@ -55,7 +55,7 @@ This project utilizes the following models:
 The results of the occupancy predictions will include point forecasts as well as prediction intervals, providing insights into the expected occupancy levels along with measures of uncertainty. 
 
 ## Example
-Here's the expected column :
+First the columns of the data set need to be named as following:
 
 ![Expected column names](docs/imgs/column_names.png)
 
