@@ -28,8 +28,8 @@ The goal is to provide accurate occupancy forecasts that can assist hotel manage
 - matplotlib
 - seaborn
 - pmdarima
-- tensorflow
-- prophet
+- tensorflow (not necessary, used only for idea testing)
+- prophet (not necessary, used only for idea testing)
 
 ## Installation
 1. Clone the repository: git clone https://github.com/Matija-Kukic/lumen.git
