@@ -32,7 +32,7 @@ The goal is to provide accurate occupancy forecasts that can assist hotel manage
 - prophet
 
 ## Installation
-1. Clone the repository: git clone https://github.com/your_username/hotel-occupancy-prediction.git
+1. Clone the repository: git clone https://github.com/Matija-Kukic/lumen.git
 2. Install the required dependencies: pip install -r requirements.txt
 
 ## Data
