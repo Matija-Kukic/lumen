@@ -85,6 +85,11 @@ def model(df):
     test = room_occupancy.iloc[2:368]
     train = room_occupancy.iloc[368:-1]
     
+    test_list = list()
+    for i in range(len(test)):
+        test_list.append((test[i] + train[i]) / 2)
+        
+    
     model = auto_arima(seasonal_difference_df["room_cnt"], seasonal = True, trace = False, approx = False, m = 7)
     order_tuple = tuple(model.order)
     seasonal_order_tuple = tuple(model.seasonal_order)
