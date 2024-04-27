@@ -5,6 +5,8 @@ import joblib as jl
 from datetime import datetime,timedelta
 from pathlib import Path
 import math
+import warnings
+warnings.filterwarnings("ignore")
 def main():
     model = jl.load('arima_trained.pkl')
     df = pd.read_parquet('test.parquet')
@@ -113,7 +115,7 @@ def main():
     #print(date_list)
     sd = min(date_list)
     ed = max(date_list)
-    print(len(prediction_list),len(date_list),start,end,date_list[len(date_list)-1])
+    #print(len(prediction_list),len(date_list),start,end,date_list[len(date_list)-1])
     plt.figure(figsize=(50, 10))
     plt.plot(date_list, prediction_list,color = "red")
     plt.plot(date_list, upper_list,color = "orange")
