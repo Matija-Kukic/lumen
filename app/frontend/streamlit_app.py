@@ -1,5 +1,8 @@
 import streamlit as st
 import requests
+from pathlib import Path
+from datetime import datetime
+import matplotlib.pyplot as plt
 
 st.title('Room404 Occupancy Prediction')
 
@@ -14,9 +17,28 @@ if uploaded_file is not None:
 
    if response.status_code == 200:
       # If the request is successful, display the analysis results
-      analysis_result = response.json()
-      st.text("Analysis Result (dictionary):")
-      st.write(analysis_result)
+      res = response.json()
+      dates = res["date"]
+      datetime_objects = [datetime.strptime(ts, '%Y-%m-%dT%H:%M:%S') for ts in dates]
+      dates = datetime_objects
+      preds = res["predictions"]
+      upper = res["upper"]
+      lower = res["lower"]
+      occ = res["occ"]
+      plt.figure(figsize=(100, 20))
+      plt.plot(dates, preds,color = "red")
+      plt.plot(dates, upper,color = "orange")
+      plt.plot(dates, lower,color = "orange")
+      plt.plot(dates, occ, color="blue")
+      plt.fill_between(dates, upper, lower, color='gray', alpha=0.3)
+      plt.title("Ukupan broj zauzetih soba")
+      plt.xlabel("Datum")
+      plt.ylabel("Ukupan broj gostiju")
+      plt.xticks(rotation = 90)  
+      plt.savefig('plot.png')
+      st.image("plot.png", width = 1280, use_column_width=True, output_format="auto")
+      #st.text("Analysis Result (dictionary):")
+      #st.write(analysis_result)
 
    else:
       # If there's an error, display the error message

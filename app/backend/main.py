@@ -20,11 +20,15 @@ async def analyze_parquet(file: UploadFile = File(...)):
         
         df = pd.read_parquet('test.parquet')
 
-        predictions_result = prediction(df)
-
-        analysis_result = {
-            "predictions": predictions_result,
+        date_list, prediction_list, upper_list, lower_list, room_occ = prediction(df)
+        res = {
+            "predictions": prediction_list,
+            "date" : date_list,
+            "upper" : upper_list,
+            "lower" : lower_list,
+            "occ" : room_occ
         }
-        return analysis_result
+        
+        return res
     else:
         return {"error": "Uploaded file must be a Parquet file"}
