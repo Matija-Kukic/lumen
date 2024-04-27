@@ -18,9 +18,6 @@ if uploaded_file is not None:
       st.text("Analysis Result (dictionary):")
       st.write(analysis_result)
 
-      st.text("Analysis Result (text):")
-      st.write(response.text)  # Display the result from the FastAPI endpoint
-
    else:
       # If there's an error, display the error message
       st.error(f"Error: {response.text}")

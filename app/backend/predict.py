@@ -33,18 +33,6 @@ def prediction(df):
     end = int((date2-date1).days) + start
     #print(start,end,date1,date2)
     pred = model.predict(start+366,end+366)
-    #print(pred)
-
-    #path = Path.cwd().parent
-    #filePath = str(path) + "data_cleanup/second_dataset/train_data_price_corrected.parquet"
-    #df2 = pd.read_parquet(filePath)
-
-    '''
-    path = Path.cwd()
-    print("path je: ", path)
-    filePath = str(path) + "/backend/train_data_price_corrected.parquet"
-    print("filePath je: ", filePath)
-    '''
 
     # Get the path to the Parquet file
     file_path = Path(__file__).parent / "train_data_price_corrected.parquet"
@@ -93,8 +81,6 @@ def prediction(df):
         residuals.append(mid_point_test[i]-prediction_list[i])
     residuals_sorted = np.sort(residuals_list)
    
-    #REAL SCIENCES USE 5 SIGMA FOR P VALUE, WE ARE NOT REAL SCIENTISTS BUT PSYCOLOGYSTS STILL TAKE THEMSEVLES SERIOUSLY 
-    #SO CAN WE!!!!!!!!
     p_values = [(np.sum(residuals_list >= r) + 1) / (len(residuals_list) + 1) for r in residuals_sorted]
     alpha = 0.05
     
