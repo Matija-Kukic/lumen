@@ -14,11 +14,13 @@ if uploaded_file is not None:
 
    if response.status_code == 200:
       # If the request is successful, display the analysis results
-      #analysis_result = response.json()
-      #st.text("Analysis Result:")
-      #st.write(analysis_result)
-      st.text("Analysis Result:")
+      analysis_result = response.json()
+      st.text("Analysis Result (dictionary):")
+      st.write(analysis_result)
+
+      st.text("Analysis Result (text):")
       st.write(response.text)  # Display the result from the FastAPI endpoint
+
    else:
       # If there's an error, display the error message
       st.error(f"Error: {response.text}")

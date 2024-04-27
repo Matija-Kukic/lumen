@@ -24,15 +24,24 @@ async def analyze_parquet(file: UploadFile = File(...)):
         # Load the saved Parquet file into a pandas DataFrame
         df = pd.read_parquet('test.parquet')
 
-        prediction(df)
+        #prediction(df)
 
         # Analyze the DataFrame (example: calculating mean, median, etc.)
         '''
         analysis_result = {
+            "predictions": prediction(df),
             "columns": df.columns.tolist(),
             "num_rows": len(df),
         }
-        return analysis_result
         '''
+        # Call the predictions function and store the result
+        predictions_result = prediction(df)
+
+        # Create the analysis result dictionary and include the predictions
+        analysis_result = {
+            "predictions": predictions_result,
+        }
+        return analysis_result
+        
     else:
         return {"error": "Uploaded file must be a Parquet file"}

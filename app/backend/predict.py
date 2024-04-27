@@ -46,12 +46,11 @@ def prediction(df):
     print("filePath je: ", filePath)
     '''
 
-    # Get the path to the file within the Docker container
-    path = Path("/app/backend/train_data_price_corrected.parquet")
+    # Get the path to the Parquet file
+    file_path = Path(__file__).parent / "train_data_price_corrected.parquet"
 
     # Convert the Path object to a string
-    filePath = str(path)
-    print("filePath je: ", filePath)
+    filePath = str(file_path)
 
     df2 = pd.read_parquet(filePath)
     room_occupancy2 = df2[(df2["cancel_date"].isna())]
@@ -116,6 +115,17 @@ def prediction(df):
         lo, hi = predict_new_point(i)
         lower_list.append(lo)
         upper_list.append(hi)
+
+    #for i in range(len(lower_list)):
+    #    print(lower_list[i], prediction_list[i],upper_list[i])
+    
+        predictions_result = []
     for i in range(len(lower_list)):
-        print(lower_list[i], prediction_list[i],upper_list[i])
+        predictions_result.append({
+            "lower_bound": lower_list[i],
+            "prediction": prediction_list[i],
+            "upper_bound": upper_list[i]
+        })
+
+    return predictions_result
     #print(date_list)
