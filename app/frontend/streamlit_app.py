@@ -25,6 +25,8 @@ if uploaded_file is not None:
       upper = res["upper"]
       lower = res["lower"]
       occ = res["occ"]
+      st.text("Blue line - given data")
+      st.text("Red line - prediction data")
       plt.figure(figsize=(100, 20))
       plt.plot(dates, preds,color = "red")
       plt.plot(dates, upper,color = "orange")
@@ -37,7 +39,10 @@ if uploaded_file is not None:
       plt.xticks(rotation = 90)  
       plt.savefig('plot.png')
       st.image("plot.png", width = 1280, use_column_width=True, output_format="auto")
-      #st.text("Analysis Result (dictionary):")
+      
+      for i in range(len(preds)):
+         st.text(str(dates[i].date()))
+         st.text("True value: " + str(round(occ[i]))+ " Prediction: "+ str(round(preds[i]))+ " Upper: "+ str(round(upper[i]))+ " Lower: " + str(round(lower[i])))
       #st.write(analysis_result)
 
    else:
