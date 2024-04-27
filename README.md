@@ -42,7 +42,7 @@ The data set used in this project should contain historical hotel occupancy data
 ## Usage
 To use the hotel occupancy prediction model:
 
-1. Position your terminal in lumen/app and run docker file with: docker-compose up --build
+1. Position your terminal in "lumen/app" and run docker file with: docker-compose up --build
 2. In browser open http://localhost:8501/ and upload the .parquet file containing future data.
 
 If you want to implement your own data and experiment:
