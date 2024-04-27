@@ -61,6 +61,7 @@ def main():
     test = room_occupancy2.iloc[2:368]
     train = room_occupancy2.iloc[368:-1] 
     train = pd.concat([train, train.copy()], ignore_index=True) 
+    test = pd.concat([test, test.copy()], ignore_index=True) 
     #print(train)
     test_list =  test["room_cnt"].tolist()
     train_list = train["room_cnt"].tolist()

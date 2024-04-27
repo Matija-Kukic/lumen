@@ -24,7 +24,7 @@ df = pd.read_parquet(filePath)
 df['date_from'] = df['date_from'] + pd.DateOffset(years=2)
 df['date_to'] = df['date_to'] + pd.DateOffset(years=2)
 df = df[df['date_from'] > '2010-1-2']
-df = df[df['date_to'] < '2010-8-25']
+df = df[df['date_to'] < '2011-4-25']
 df = df[df['date_to'] > '2010-1-2']
 print(df.info())
 df.to_parquet("test.parquet")
